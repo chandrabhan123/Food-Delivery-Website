@@ -1,15 +1,58 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
 
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-      font-family: "Roboto Condensed", sans-serif;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Condensed", sans-serif;
 }
-html, body{
-    height: 100%;
+html,
+body {
+  height: 100%;
 }
-.container{
-    max-width: 1400px;   
-    margin: 0 auto;
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+.nav-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+.nav-section .brand-logo {
+  font-size: 20px;
+  color: #e39102;
+}
+.nav-section .nav-link ul {
+  display: flex;
+  gap: 50px;
+}
+.nav-section .nav-link ul li {
+  list-style: none;
+}
+.nav-section .nav-link ul li a {
+  font-weight: 500;
+  font-size: 16px;
+  text-decoration: none;
+  color: #404040;
+}
+.nav-section .cart-and-signin {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.cart-and-signin .cart i{
+    font-size: 20px;
+}
+.nav-section .cart-and-signin .sign-in {
+  background-color: #e39102;
+  font-size: 16px;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: box-shadow 180ms ease, transform 120ms ease;
+  display: inline-block;
+  color: #fff;
 }
